@@ -1,0 +1,27 @@
+<section class="section__banner">
+    <div class="section__banner-banner">
+        <div class="container__button">
+            <button class="button__btn" (click)="cambiarIdioma($event)" [ngClass]="{'buttonActive':active}" >SPA</button>
+            <button class="button__btn" (click)="cambiarIdioma($event)" [ngClass]="{'buttonActive':!active}">ENG</button>
+        </div>
+        <div class="section__banner-banner-container">
+            <div class="section__banner-banner-container-enlaces">
+                <div class="container__logo">
+                    <img src="assets/logo-banner-nails.png" alt="">
+                </div>
+                <h1 class="container__titulo">{{tituloBanner}}</h1>
+                <div class="container__appstore">
+                    <img src="assets/app-store-android.png" alt="">
+                    <img src="assets/app-store-ios.png" alt="">
+                </div>
+                <p class="container__description">{{descripBanner}}</p>
+            </div>
+        </div>
+        <div class="container__botle">
+            <img src="assets/botle-banner-nails.png" alt="">
+        </div>
+        <div class="container__mobile">
+            <img src="assets/mobile-banner-nails.png" alt="">
+        </div>
+    </div>
+</section>
